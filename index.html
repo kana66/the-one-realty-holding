@@ -79,7 +79,15 @@
             };
             return isMobile.any(); //是移动设备
         }
-        console.log(IsMobile());
+
+        $(document).ready(function(){
+            if (IsMobile()) {
+                $('#topSliderPc').hide();
+            } else {
+                $('#topSliderMobile').hide();
+            }
+        });
+        
     </script>
 </head>
 
@@ -206,7 +214,7 @@
                 <div class="content_wrapper">
                     <div class="content_list owl-carousel owl-theme" data-slider-height="500" data-slider-auto="1"
                         data-slider-mode="3" data-slider-mode_id="3" data-slider-pause="5" data-slider-ease="ease-out"
-                        data-slider-speed="1" style="height:500px">
+                        data-slider-speed="1" style="height:500px" id='topSliderPc'>
                         <div class="item_block" data-index="0">
                             <div class="item_bg image"
                                 data-thumb="//resources.jsmo.xin/templates/upload/2041/201703/1490687229663_80x80.jpg"
@@ -232,6 +240,20 @@
                             <a onclick="return false" href="#" style="width: 100%; height: 100%;"> </a>
                         </div>
                     </div>
+                    <div class="content_list owl-carousel owl-theme" data-slider-auto="1" data-slider-mode="0" data-slider-pause="5" data-slider-ease="ease-out" data-slider-speed="0.5" id='topSliderMobile'>
+                        <div class="item_block">
+                            <img src="images/1491384102340.jpg">
+                        </div>
+                        <div class="item_block">
+                            <img src="images/1491384013471.jpg">
+                        </div>
+                        <div class="item_block">
+                            <img src="images/1491384441591.jpg">
+                        </div>
+                        <div class="item_block">
+                            <img src="images/1491384537946.jpg">
+                        </div>
+                    </div>
                     <div class="sliderArrow">
                         <div></div>
                     </div>
@@ -242,18 +264,7 @@
                 <div class="content_wrapper">
                     <div class="content_list owl-carousel owl-theme" data-slider-auto="1" data-slider-mode="0"
                         data-slider-pause="5" data-slider-ease="ease-out" data-slider-speed="0.5">
-                        <div class="item_block">
-                            <img src="/images/1491384102340.jpg">
-                        </div>
-                        <div class="item_block">
-                            <img src="/images/1491384013471.jpg">
-                        </div>
-                        <div class="item_block">
-                            <img src="/images/1491384441591.jpg">
-                        </div>
-                        <div class="item_block">
-                            <img src="/images/1491384537946.jpg">
-                        </div>
+                        
                     </div>
                     <div class="sliderArrow">
                         <div></div>
