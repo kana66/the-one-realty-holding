@@ -1343,16 +1343,16 @@
                                 </div>
                                 <div id="contactform" class="contactform wow">
                                     <form
-                                        action="/service/message?form_token=5ef0370d74a71"
+                                        action="./php/form.php"
                                         method="post">
                                         <p class="contactform_name"> <input type="text" class="inputtxt" name="name"
-                                                placeholder="姓名" autocomplete="off"> </p>
+                                                placeholder="姓名" autocomplete="on"> </p>
                                         <p class="contactform_eml"> <input type="text" class="inputtxt" name="email"
-                                                placeholder="邮箱" autocomplete="off"> </p>
+                                                placeholder="邮箱" autocomplete="on"> </p>
                                         <p class="contactform_tel"> <input type="text" class="inputtxt" name="tel"
-                                                placeholder="电话" autocomplete="off"> </p>
+                                                placeholder="电话" autocomplete="on"> </p>
                                         <p class="contactform_content"> <textarea class="inputtxt" name="content"
-                                                placeholder="内容" autocomplete="off"></textarea> </p>
+                                                placeholder="内容" autocomplete="on"></textarea> </p>
                                         <p class="contactform_submit"> <input class="inputtxt submit" type="submit"
                                                 value="提交"> </p>
                                     </form>
@@ -1415,5 +1415,9 @@
         <script src="https://theonerealty.oss-cn-hongkong.aliyuncs.com/mvideo.js" type="text/javascript"></script>
     </div>
 </body>
-
+<script>
+    function link(params) {
+        window.open('http://au.mikecrm.com/m6w3iD7', '_blank');
+    }
+</script>
 </html>
